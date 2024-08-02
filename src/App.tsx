@@ -2,8 +2,10 @@ import { useState } from "react";
 import Alert from "./components/Alert";
 import Button from "./components/Button/Button";
 import ListGroup from "./components/ListGroup";
+import Like from "./components/Like";
 import "./App.css";
 import { BsFillCalendarFill } from "react-icons/bs";
+
 
 function App() {
   // Add listgroup component
@@ -45,11 +47,17 @@ function App() {
   //   <BsFillCalendarFill color="cyan" size="40"/>
   // </div>;
 
+  // Add a new button
+  // return (
+  //   <div>
+  //     <Button onClick={() => {}}>My Button</Button>
+  //   </div>
+  // )
+
+  // Add a like button
   return (
-    <div>
-      <Button onClick={() => {}}>My Button</Button>
-    </div>
-  )
+    <Like />
+  );
 }
 
 export default App;
